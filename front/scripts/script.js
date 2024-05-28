@@ -31,7 +31,7 @@ const gameboard = (
             // return wordBank[index];
 
             try {
-                const response = await fetch("http://localhost:3000/word");
+                const response = await fetch("https://wordle-clone-project-back.vercel.app/word");
                 if (!response.ok) {
                   throw new Error(`HTTP error! Status: ${response.status}`);
                 }

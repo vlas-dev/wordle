@@ -25,7 +25,7 @@ app.get('/word', (req, res) => {
     res.send({ word: random_word });
 });
 
-app.get("/", (req, res) => {
+app.get("/image", (req, res) => {
   res.sendFile(path.join(__dirname, "./image.jpg"));
 });
 

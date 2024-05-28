@@ -25,6 +25,10 @@ app.get('/word', (req, res) => {
     res.send({ word: random_word });
 });
 
+app.get("/", (req, res) => {
+  res.sendFile(path.join(__dirname, "./image.jpg"));
+});
+
 app.listen(port, () => {
   console.log(`Server running at http://localhost:${port}`);
 });
